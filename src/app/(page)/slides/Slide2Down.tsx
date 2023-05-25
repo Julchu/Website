@@ -1,17 +1,17 @@
 import { FC } from "react";
 import Banner from "@/app/(page)/Banner";
 import Image from "next/image";
+import PresentationImage from "/public/presentation.jpeg";
 
 const Slide2: FC = () => {
   return (
     <section className={"relative h-full snap-center"}>
       <Image
-        src={"/presentation.png"}
+        src={PresentationImage}
         alt={"Presentation"}
         fill={true}
         style={{ objectFit: "cover", objectPosition: "top" }}
         placeholder={"blur"}
-        blurDataURL={"/presentation.png"}
         sizes={"100vw"}
       />
       <Banner

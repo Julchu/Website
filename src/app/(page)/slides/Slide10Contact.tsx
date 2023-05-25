@@ -1,17 +1,17 @@
 import { FC } from "react";
 import Contact from "@/app/(page)/Contact";
 import Image from "next/image";
+import ContactImage from "/public/contact.jpeg";
 
 const Slide10: FC = () => {
   return (
     <section className={"relative h-full snap-center "}>
       <Image
-        src={"/contact.png"}
+        src={ContactImage}
         alt={"Vancouver Pagoda"}
         fill={true}
         style={{ objectFit: "cover", objectPosition: "center top" }}
         placeholder={"blur"}
-        blurDataURL={"/contact.png"}
         sizes={"100vw"}
       />
       <Contact
