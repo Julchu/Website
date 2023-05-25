@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Banner from "@/app/(page)/Banner";
 import Image from "next/image";
-import HomeImage from "/public/home.jpeg";
+import HomeImage from "/public/home.png";
 
 const Slide0: FC = () => {
   return (
@@ -12,12 +12,13 @@ const Slide0: FC = () => {
         fill={true}
         style={{ objectFit: "cover", objectPosition: "bottom" }}
         placeholder={"blur"}
+        quality={100}
         sizes={"100vw"}
         priority
       />
       <Banner
         title={"Hi, I'm Julian!"}
-        subtitle={"Why you should hire Julian as a Software Developer"}
+        subtitle={"Welcome to my life as a full stack developer"}
       />
     </section>
   );

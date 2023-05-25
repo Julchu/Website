@@ -1,10 +1,10 @@
 import { FC } from "react";
-import Title from "@/app/(page)/Title";
+import Heading from "@/app/(page)/Heading";
 
 const Slide4: FC = () => {
   return (
     <section className={"h-screen snap-center bg-white"}>
-      <Title title={"What experience Julian brings"} />
+      <Heading title={"What experience Julian brings"} />
     </section>
   );
 };

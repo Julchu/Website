@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Contact from "@/app/(page)/Contact";
 import Image from "next/image";
-import ContactImage from "/public/contact.jpeg";
+import ContactImage from "/public/contact-color.png";
 
 const Slide10: FC = () => {
   return (
@@ -12,6 +12,7 @@ const Slide10: FC = () => {
         fill={true}
         style={{ objectFit: "cover", objectPosition: "center top" }}
         placeholder={"blur"}
+        quality={100}
         sizes={"100vw"}
         priority
       />

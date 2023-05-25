@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Banner from "@/app/(page)/Banner";
 import Image from "next/image";
-import PresentationImage from "/public/presentation.jpeg";
+import PresentationImage from "/public/presentation.png";
 
 const Slide2: FC = () => {
   return (
@@ -12,6 +12,7 @@ const Slide2: FC = () => {
         fill={true}
         style={{ objectFit: "cover", objectPosition: "top" }}
         placeholder={"blur"}
+        quality={100}
         sizes={"100vw"}
         priority
       />
