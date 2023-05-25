@@ -13,6 +13,7 @@ const Slide0: FC = () => {
         style={{ objectFit: "cover", objectPosition: "bottom" }}
         placeholder={"blur"}
         sizes={"100vw"}
+        priority
       />
       <Banner
         title={"Hi, I'm Julian!"}

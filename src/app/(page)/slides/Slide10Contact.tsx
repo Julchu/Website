@@ -13,6 +13,7 @@ const Slide10: FC = () => {
         style={{ objectFit: "cover", objectPosition: "center top" }}
         placeholder={"blur"}
         sizes={"100vw"}
+        priority
       />
       <Contact
         title={"Contact"}
