@@ -1,4 +1,4 @@
-import "../globals.css";
+import "./globals.css";
 import { Montserrat } from "next/font/google";
 import { ReactNode } from "react";
 

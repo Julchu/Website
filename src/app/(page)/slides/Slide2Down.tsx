@@ -1,13 +1,16 @@
 import { FC } from "react";
 import Banner from "@/app/(page)/Banner";
+import Image from "next/image";
 
 const Slide2: FC = () => {
   return (
-    <section
-      className={
-        "relative h-screen snap-center bg-[url('/presentation.png')] bg-cover bg-top"
-      }
-    >
+    <section className={"relative h-full snap-center"}>
+      <Image
+        src={"/presentation.png"}
+        alt={"Presentation"}
+        fill={true}
+        style={{ objectFit: "cover", objectPosition: "top" }}
+      />
       <Banner
         title={"Down to the details"}
         subtitle={

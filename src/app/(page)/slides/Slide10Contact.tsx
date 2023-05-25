@@ -1,13 +1,16 @@
 import { FC } from "react";
 import Contact from "@/app/(page)/Contact";
+import Image from "next/image";
 
 const Slide10: FC = () => {
   return (
-    <section
-      className={
-        "h-screen snap-center bg-[url('/contact.jpeg')] bg-cover bg-[center_top_10%]"
-      }
-    >
+    <section className={"relative h-full snap-center "}>
+      <Image
+        src={"/contact.png"}
+        alt={"Vancouver Pagoda"}
+        fill={true}
+        style={{ objectFit: "cover", objectPosition: "center top" }}
+      />
       <Contact
         title={"Contact"}
         phone={"(437)-324-7100"}
