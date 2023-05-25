@@ -10,6 +10,9 @@ const Slide0: FC = () => {
         alt={"Patagonia Mountains"}
         fill={true}
         style={{ objectFit: "cover", objectPosition: "bottom" }}
+        placeholder={"blur"}
+        blurDataURL={"/home.png"}
+        sizes={"100vw"}
       />
       <Banner
         title={"Why hire Julian?"}

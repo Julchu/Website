@@ -10,6 +10,9 @@ const Slide2: FC = () => {
         alt={"Presentation"}
         fill={true}
         style={{ objectFit: "cover", objectPosition: "top" }}
+        placeholder={"blur"}
+        blurDataURL={"/presentation.png"}
+        sizes={"100vw"}
       />
       <Banner
         title={"Down to the details"}

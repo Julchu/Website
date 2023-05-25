@@ -10,6 +10,9 @@ const Slide10: FC = () => {
         alt={"Vancouver Pagoda"}
         fill={true}
         style={{ objectFit: "cover", objectPosition: "center top" }}
+        placeholder={"blur"}
+        blurDataURL={"/contact.png"}
+        sizes={"100vw"}
       />
       <Contact
         title={"Contact"}
