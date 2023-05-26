@@ -1,9 +1,9 @@
 import { FC } from "react";
 
-const Heading: FC<{ title: string }> = ({ title }) => {
+const Heading: FC<{ title: string }> = ({title}) => {
   return (
-    <div className={"sticky bottom-[60%] pl-20 pt-20"}>
-      <h1 className={"text-6xl font-bold"}>{title}</h1>
+    <div className={"sticky bottom-0 pt-[5cqw] pl-[5cqw]"}>
+      <h1 className={"font-bold text-[4cqw]/[4cqw]"}>{title}</h1>
     </div>
   );
 };

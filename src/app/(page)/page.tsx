@@ -15,7 +15,9 @@ import Slide10 from "@/app/(page)/slides/Slide10Contact";
 export default function Home() {
   return (
     <main
-      className={"relative h-screen snap-y snap-mandatory overflow-y-scroll"}
+      className={
+        "relative h-screen snap-y snap-mandatory overflow-y-scroll"
+      }
     >
       <Slide0 />
       <Slide1 />
