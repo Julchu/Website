@@ -1,9 +1,9 @@
 import { FC } from "react";
-import Heading from "@/app/(page)/Heading";
+import Heading from "@/app/(index)/Heading";
 
 const Slide5: FC = () => {
   return (
-    <section className={"h-screen snap-center bg-white"}>
+    <section className={"relative flex h-screen snap-center flex-col 4k:h-2k"}>
       <Heading title={"What experience Julian brings"} />
     </section>
   );

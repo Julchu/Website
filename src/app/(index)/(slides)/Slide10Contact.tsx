@@ -1,11 +1,11 @@
 import { FC } from "react";
-import Contact from "@/app/(page)/Contact";
+import Contact from "@/app/(index)/Contact";
 import Image from "next/image";
 import ContactImage from "/public/contact-color.jpeg";
 
 const Slide10: FC = () => {
   return (
-    <section className={"relative h-full snap-center "}>
+    <section className={"relative flex h-screen snap-center flex-col 4k:h-2k"}>
       <Image
         src={ContactImage}
         alt={"Vancouver pagoda"}
@@ -18,7 +18,6 @@ const Slide10: FC = () => {
       />
       <Contact
         title={"Contact"}
-        phone={"(437)-324-7100"}
         email={"JChuMTL@gmail.com"}
         github={"https://github.com/JulChu"}
         linkedin={"https://www.linkedin.com/in/JulianChuMTL"}
