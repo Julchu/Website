@@ -3,7 +3,7 @@ import Banner from "@/app/(index)/Banner";
 import Image from "next/image";
 import HomeImage from "/public/home.jpeg";
 
-const Slide0: FC = () => {
+const Slide1: FC = () => {
   return (
     <section className={"relative h-screen snap-center 4k:h-2k"}>
       <div className={"absolute h-full w-full animate-fadeIn bg-black"}>
@@ -26,4 +26,4 @@ const Slide0: FC = () => {
   );
 };
 
-export default Slide0;
+export default Slide1;

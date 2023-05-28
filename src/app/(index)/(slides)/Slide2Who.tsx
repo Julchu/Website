@@ -6,9 +6,9 @@ import PianoImage from "/public/piano.jpeg";
 import PatagoniaImage from "/public/patagonia.jpeg";
 import WhoImage from "/public/who.jpeg";
 
-const Slide1: FC = () => {
+const Slide2: FC = () => {
   return (
-    <section className={"flex h-screen flex-1 snap-center flex-col 4k:h-2k"}>
+    <section className={"flex h-screen snap-center flex-col 4k:h-2k"}>
       <Heading title={"Who is Julian?"} />
 
       {/* Breakout of container */}
@@ -19,13 +19,13 @@ const Slide1: FC = () => {
       <div className={"flex w-full flex-1 gap-x-16"}>
         <List />
 
-        <Image2 />
+        <Images />
       </div>
     </section>
   );
 };
 
-const Image2: FC = () => {
+const Images: FC = () => {
   return (
     <div
       className={
@@ -122,7 +122,7 @@ const List: FC = () => {
   );
 };
 
-const Images: FC = () => {
+const OldImages: FC = () => {
   return (
     <div
       className={
@@ -194,4 +194,4 @@ const Images: FC = () => {
   );
 };
 
-export default Slide1;
+export default Slide2;

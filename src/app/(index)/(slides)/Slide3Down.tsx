@@ -3,18 +3,17 @@ import Banner from "@/app/(index)/Banner";
 import Image from "next/image";
 import PresentationImage from "/public/presentation.jpeg";
 
-const Slide2: FC = () => {
+const Slide3: FC = () => {
   return (
     <section className={"relative h-screen snap-center 4k:h-2k"}>
-      <div className={"absolute z-0 h-[100%] w-[100%] animate-fadeIn bg-black"}>
+      <div className={"absolute h-full w-full animate-fadeIn bg-black"}>
         <Image
+          className={"object-cover object-top"}
           src={PresentationImage}
           alt={"Presentation"}
           fill={true}
-          style={{ objectFit: "cover", objectPosition: "top" }}
           placeholder={"blur"}
           quality={100}
-          sizes={"100vw"}
           priority
         />
       </div>
@@ -28,4 +27,4 @@ const Slide2: FC = () => {
   );
 };
 
-export default Slide2;
+export default Slide3;

@@ -43,7 +43,7 @@ module.exports = {
       },
       padding: {
         // Left
-        "left-sm": "",
+        "left-sm": "2rem",
         "left-md": "8rem",
         "left-lg": "",
         "left-xl": "",
