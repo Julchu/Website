@@ -52,27 +52,25 @@ const List: FC = () => {
   ];
 
   return (
-    <div
-      className={
-        "flex-0 lg: flex w-[50%] flex-col py-top-md md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]"
-      }
-    >
+    <div className={"flex-0 flex w-[50%] flex-col py-top-md md:pl-left-md"}>
       {list.length > 0
         ? list.map(({ text, indented, bullet, heading }, listIndex) => {
             if (heading)
               return (
                 <h1
                   key={`slide1_list_${listIndex}`}
-                  className={"flex-1 pl-left-sm"}
+                  className={
+                    "flex-1 pl-left-sm xl:text-3xl/[1.5em] 2xl:text-4xl/[1.5em] 2k:text-5xl/[1.5em]"
+                  }
                 >
-                  {text}
+                  <b>{text}</b>
                 </h1>
               );
             else
               return (
                 <p
                   key={`slide1_list_${listIndex}`}
-                  className={`flex-1 md:pl-left-md`}
+                  className={`flex-1 md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]`}
                 >
                   {bullet ? "—" : ""}&nbsp;
                   {text}

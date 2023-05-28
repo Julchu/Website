@@ -102,7 +102,7 @@ const List: FC = () => {
   return (
     <div
       className={
-        "flex-0 lg: flex w-[60%] flex-col py-top-md md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]"
+        "flex-0 flex w-[60%] flex-col py-top-md md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]"
       }
     >
       {list.length > 0

@@ -2,7 +2,7 @@ import Slide1 from "@/app/(index)/(slides)/Slide1Home";
 import Slide2 from "@/app/(index)/(slides)/Slide2Who";
 import Slide3 from "@/app/(index)/(slides)/Slide3Down";
 import Slide4 from "@/app/(index)/(slides)/Slide4Why";
-import Slide5 from "@/app/(index)/(slides)/Slide5ExpFluxon";
+import Slide5 from "@/app/(index)/(slides)/Slide5ExpVoyagers";
 import Slide6 from "@/app/(index)/(slides)/Slide6ExpPrev";
 import Slide7 from "@/app/(index)/(slides)/Slide7ProjectsPricey";
 import Slide8 from "@/app/(index)/(slides)/Slide8ProjectsTeaWork";
@@ -24,7 +24,7 @@ export default function Home() {
       <Slide2 />
       <Slide3 />
       <Slide4 />
-      {/*<Slide5 />*/}
+      <Slide5 />
       {/*<Slide6 />*/}
       {/*<Slide7 />*/}
       {/*<Slide8 />*/}
