@@ -27,17 +27,93 @@ const Slide1: FC = () => {
 
 const Image2: FC = () => {
   return (
-    <div className={"relative my-auto w-[800px] animate-fadeIn bg-black"}>
+    <div className={"relative my-auto 2xl:w-[550px] 2k:w-[800px]"}>
+      <p
+        className={"absolute right-[10%] top-[10%] z-50 text-2xl text-gray-500"}
+      >
+        Yep, I speak French
+      </p>
       <Image
+        className={"animate-fadeIn bg-black"}
         src={WhoImage}
         alt={"Poutine shirt"}
         placeholder={"blur"}
         quality={100}
         priority
       />
+      <p className={"mt mt-5 text-2xl text-gray-500"}>
+        Exploring the abundant art in Chile, and climbing the Patagonia&apos;s
+      </p>
     </div>
   );
 };
+
+const List: FC = () => {
+  const list: {
+    title?: string;
+    text?: string;
+    bullet?: boolean;
+    indented?: boolean;
+  }[] = [
+    { title: "Adventurer", bullet: true },
+    {
+      text: "Road tripped to West Virginia, kayaking one of the world’s oldest rivers",
+      bullet: true,
+      indented: true,
+    },
+    {
+      text: "Climbed Chile’s Patagonia to gaze upon the majestic Torres Del Paine",
+      bullet: true,
+      indented: true,
+    },
+    {
+      title: "Car guy",
+      bullet: true,
+      text: "(dad used to collect classic cars)",
+    },
+    {
+      title: "Aspiring dog-father",
+      text: "(Corgis are basically loaves of bread with feet)",
+      bullet: true,
+    },
+    {
+      title: "Sailor",
+      text: "(used to compete in Quebec, Canada)",
+      bullet: true,
+    },
+    {
+      title: "Foodie",
+      text: "(I’m a picky eater, so I spend a lot of time researching foods I enjoy)",
+      bullet: true,
+    },
+    {
+      text: "Ex-accountant from Montreal who wanted to transition into a creative career, graduating in Computer Science at Wilfrid Laurier University",
+      bullet: true,
+    },
+  ];
+  return (
+    <div
+      className={
+        "flex-0 flex w-[65%] flex-col py-[8cqh] pl-[10cqw] text-[1.3cqw]/[1.3cqw]"
+      }
+    >
+      {list.length > 0
+        ? list.map(({ title, text, indented, bullet }, listIndex) => {
+            return (
+              <p
+                key={`slide1_list_${listIndex}`}
+                className={`flex-1 ${indented ? "pl-[5cqw]" : ""}`}
+              >
+                {bullet ? "—" : ""}&nbsp;<b>{title}</b>&nbsp;
+                {text}
+              </p>
+            );
+          })
+        : null}
+    </div>
+  );
+};
+
 const Images: FC = () => {
   return (
     <div
@@ -106,72 +182,6 @@ const Images: FC = () => {
           Exploring the abundant art in Chile, and climbing the Patagonia&apos;s
         </p>
       </div>
-    </div>
-  );
-};
-
-const List: FC = () => {
-  const list: {
-    title?: string;
-    text?: string;
-    bullet?: boolean;
-    indented?: boolean;
-  }[] = [
-    { title: "Adventurer", bullet: true },
-    {
-      text: "Road tripped to West Virginia, kayaking one of the world’s oldest rivers",
-      bullet: true,
-      indented: true,
-    },
-    {
-      text: "Climbed Chile’s Patagonia to gaze upon the majestic Torres Del Paine",
-      bullet: true,
-      indented: true,
-    },
-    {
-      title: "Car guy",
-      bullet: true,
-      text: "(dad used to collect classic cars)",
-    },
-    {
-      title: "Aspiring dog-father",
-      text: "(Corgis are basically loaves of bread with feet)",
-      bullet: true,
-    },
-    {
-      title: "Sailor",
-      text: "(used to compete in Quebec, Canada)",
-      bullet: true,
-    },
-    {
-      title: "Foodie",
-      text: "(I’m a picky eater, so I spend a lot of time researching foods I enjoy)",
-      bullet: true,
-    },
-    {
-      text: "Ex-accountant from Montreal who wanted to transition into a creative career, graduating in Computer Science at Wilfrid Laurier University",
-      bullet: true,
-    },
-  ];
-  return (
-    <div
-      className={
-        "flex-0 flex w-[65%] flex-col py-[8cqh] pl-[10cqw] text-[1.3cqw]/[1.3cqw]"
-      }
-    >
-      {list.length > 0
-        ? list.map(({ title, text, indented, bullet }, listIndex) => {
-            return (
-              <p
-                key={`slide1_list_${listIndex}`}
-                className={`flex-1 ${indented ? "pl-[5cqw]" : ""}`}
-              >
-                {bullet ? "—" : ""}&nbsp;<b>{title}</b>&nbsp;
-                {text}
-              </p>
-            );
-          })
-        : null}
     </div>
   );
 };
