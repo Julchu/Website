@@ -16,7 +16,7 @@ const Slide1: FC = () => {
       {/*  className={"relative left-1/2 right-1/2 -ml-[50vw] h-full bg-blue-800"}*/}
       {/*/>*/}
 
-      <div className={"flex w-full flex-1"}>
+      <div className={"flex w-full flex-1 gap-x-16"}>
         <List />
 
         <Image2 />
@@ -27,9 +27,15 @@ const Slide1: FC = () => {
 
 const Image2: FC = () => {
   return (
-    <div className={"relative my-auto 2xl:w-[550px] 2k:w-[800px]"}>
+    <div
+      className={
+        "relative my-auto lg:w-[350px] xl:w-[450px] 2xl:w-[550px] 2k:w-[650px]"
+      }
+    >
       <p
-        className={"absolute right-[10%] top-[10%] z-50 text-2xl text-gray-500"}
+        className={
+          "lg:text-md absolute z-50 text-gray-500 lg:right-[-15%] lg:top-[10%] xl:right-[-10%] 2xl:right-[0%] 2k:text-2xl"
+        }
       >
         Yep, I speak French
       </p>
@@ -41,7 +47,9 @@ const Image2: FC = () => {
         quality={100}
         priority
       />
-      <p className={"mt mt-5 text-2xl text-gray-500"}>
+      <p
+        className={"lg:text-md relative my-auto mt-5 text-gray-500 2k:text-2xl"}
+      >
         Exploring the abundant art in Chile, and climbing the Patagonia&apos;s
       </p>
     </div>
@@ -94,7 +102,7 @@ const List: FC = () => {
   return (
     <div
       className={
-        "flex-0 flex w-[65%] flex-col py-[8cqh] pl-[10cqw] text-[1.3cqw]/[1.3cqw]"
+        "flex-0 lg: flex w-[60%] flex-col py-top-md md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]"
       }
     >
       {list.length > 0
@@ -102,7 +110,7 @@ const List: FC = () => {
             return (
               <p
                 key={`slide1_list_${listIndex}`}
-                className={`flex-1 ${indented ? "pl-[5cqw]" : ""}`}
+                className={`flex-1 ${indented ? "md:pl-left-md" : ""}`}
               >
                 {bullet ? "—" : ""}&nbsp;<b>{title}</b>&nbsp;
                 {text}

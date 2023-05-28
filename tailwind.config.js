@@ -7,13 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontSize: {
-        "banner-h1": ["6.5cqw", "6.5cqw"],
-        "banner-h1-2k": ["10.5rem", "1.1em"],
-        "banner-h3": ["2cqw", "2cqw"],
-        "heading-h1": ["4cqw", "4cqw"],
-        list: "",
-      },
       dropShadow: {
         sideImage: "0px 3px 6px rgba(0,0,0,0.9)",
       },
@@ -48,7 +41,25 @@ module.exports = {
       objectPosition: {
         poutine: "-50px 30px",
       },
+      padding: {
+        // Left
+        "left-sm": "",
+        "left-md": "8rem",
+        "left-lg": "",
+        "left-xl": "",
+        "left-2xl": "",
+        "left-2k": "",
+
+        // Top
+        "top-sm": "",
+        "top-md": "3rem",
+        "top-lg": "",
+        "top-xl": "",
+        "top-2xl": "",
+        "top-2k": "",
+      },
     },
   },
   plugins: [],
 };
+// pl-32 pt-20
