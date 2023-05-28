@@ -4,6 +4,7 @@ import Image from "next/image";
 import PoutineImage from "/public/poutine.jpeg";
 import PianoImage from "/public/piano.jpeg";
 import PatagoniaImage from "/public/patagonia.jpeg";
+import WhoImage from "/public/who.jpeg";
 
 const Slide1: FC = () => {
   return (
@@ -18,48 +19,92 @@ const Slide1: FC = () => {
       <div className={"flex w-full flex-1"}>
         <List />
 
-        <Images />
+        <Image2 />
       </div>
     </section>
   );
 };
 
+const Image2: FC = () => {
+  return (
+    <div className={"relative my-auto w-[800px] animate-fadeIn bg-black"}>
+      <Image
+        src={WhoImage}
+        alt={"Poutine shirt"}
+        placeholder={"blur"}
+        quality={100}
+        priority
+      />
+    </div>
+  );
+};
 const Images: FC = () => {
   return (
-    <div className={"relative hidden flex-1 flex-col lg:flex"}>
-      <div className={"absolute bottom-[500px] left-[150px] h-auto w-[350px]"}>
-        <Image
+    <div
+      className={
+        "relative flex flex-1 flex-col lg:bg-gray-500 xl:bg-yellow-500 2xl:bg-green-500 2k:bg-blue-500 4k:bg-red-500"
+      }
+    >
+      <div className={"relative h-full"}>
+        <div
           className={
-            "object-none object-[right_0px_bottom_0px] drop-shadow-sideImage"
+            "absolute bottom-[650px] left-[100px] flex flex-row content-center"
           }
-          src={PoutineImage}
-          alt={"Poutine shirt"}
-          placeholder={"blur"}
-          quality={100}
-          priority
-        />
-      </div>
+        >
+          <div
+            className={
+              "animate-fadeIn overflow-hidden bg-black drop-shadow-sideImage lg:h-[auto] lg:w-[200px] xl:h-[auto] xl:w-[250px] 2xl:h-[auto] 2xl:w-[300px] 2k:h-[auto] 2k:w-[350px]"
+            }
+          >
+            <Image
+              className={
+                "aspect-auto scale-[2] overflow-hidden object-contain object-poutine"
+              }
+              src={PoutineImage}
+              alt={"Poutine shirt"}
+              placeholder={"blur"}
+              quality={100}
+              priority
+            />
+          </div>
+          <p className={"z-50 my-auto ml-5 h-fit text-2xl text-gray-500"}>
+            Yep, I speak French
+          </p>
+        </div>
 
-      <div className={"absolute bottom-[200px] w-[370px]"}>
-        <Image
-          className={"drop-shadow-sideImage"}
-          src={PianoImage}
-          alt={"Piano"}
-          placeholder={"blur"}
-          quality={100}
-          priority
-        />
-      </div>
+        {/*lg:h-[300px] lg:w-[250px]*/}
+        <div
+          className={
+            "absolute bottom-[220px] animate-fadeIn bg-black lg:h-[400px] lg:w-[270px] 2k:h-[500px] 2k:w-[370px]"
+          }
+        >
+          <Image
+            className={"drop-shadow-sideImage"}
+            src={PianoImage}
+            alt={"Piano"}
+            placeholder={"blur"}
+            quality={100}
+            priority
+          />
+        </div>
 
-      <div className={"absolute bottom-[180px] left-[330px] w-[400px]"}>
-        <Image
-          className={"drop-shadow-sideImage"}
-          src={PatagoniaImage}
-          alt={"Torres Del Paine"}
-          placeholder={"blur"}
-          quality={100}
-          priority
-        />
+        <div
+          className={
+            "absolute bottom-[240px] left-[330px] animate-fadeIn bg-black 2k:h-[500px] 2k:w-[400px]"
+          }
+        >
+          <Image
+            className={"drop-shadow-sideImage"}
+            src={PatagoniaImage}
+            alt={"Torres Del Paine"}
+            placeholder={"blur"}
+            quality={100}
+            priority
+          />
+        </div>
+        <p className={"absolute bottom-[140px] text-2xl text-gray-500"}>
+          Exploring the abundant art in Chile, and climbing the Patagonia&apos;s
+        </p>
       </div>
     </div>
   );

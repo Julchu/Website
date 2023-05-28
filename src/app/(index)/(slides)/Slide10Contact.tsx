@@ -6,16 +6,18 @@ import ContactImage from "/public/contact-color.jpeg";
 const Slide10: FC = () => {
   return (
     <section className={"relative flex h-screen snap-center flex-col 4k:h-2k"}>
-      <Image
-        src={ContactImage}
-        alt={"Vancouver pagoda"}
-        fill={true}
-        style={{ objectFit: "cover", objectPosition: "center top" }}
-        placeholder={"blur"}
-        quality={100}
-        sizes={"100vw"}
-        priority
-      />
+      <div className={"absolute z-0 h-[100%] w-[100%] animate-fadeIn bg-black"}>
+        <Image
+          src={ContactImage}
+          alt={"Vancouver pagoda"}
+          fill={true}
+          style={{ objectFit: "cover", objectPosition: "center top" }}
+          placeholder={"blur"}
+          quality={100}
+          sizes={"100vw"}
+          priority
+        />
+      </div>
       <Contact
         title={"Contact"}
         email={"JChuMTL@gmail.com"}

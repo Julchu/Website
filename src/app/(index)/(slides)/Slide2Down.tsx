@@ -6,16 +6,18 @@ import PresentationImage from "/public/presentation.jpeg";
 const Slide2: FC = () => {
   return (
     <section className={"relative h-screen snap-center 4k:h-2k"}>
-      <Image
-        src={PresentationImage}
-        alt={"Presentation"}
-        fill={true}
-        style={{ objectFit: "cover", objectPosition: "top" }}
-        placeholder={"blur"}
-        quality={100}
-        sizes={"100vw"}
-        priority
-      />
+      <div className={"absolute z-0 h-[100%] w-[100%] animate-fadeIn bg-black"}>
+        <Image
+          src={PresentationImage}
+          alt={"Presentation"}
+          fill={true}
+          style={{ objectFit: "cover", objectPosition: "top" }}
+          placeholder={"blur"}
+          quality={100}
+          sizes={"100vw"}
+          priority
+        />
+      </div>
       <Banner
         title={"Down to the details"}
         subtitle={
