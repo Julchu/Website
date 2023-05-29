@@ -16,7 +16,11 @@ const Slide2: FC = () => {
       {/*  className={"relative left-1/2 right-1/2 -ml-[50vw] h-full bg-blue-800"}*/}
       {/*/>*/}
 
-      <div className={"flex w-full flex-1 gap-x-16"}>
+      <div
+        className={
+          "my-auto flex w-full flex-1 flex-col lg:flex-row lg:gap-x-12 xl:gap-x-16"
+        }
+      >
         <List />
 
         <Images />
@@ -25,16 +29,15 @@ const Slide2: FC = () => {
   );
 };
 
+// Carousel
 const Images: FC = () => {
   return (
     <div
-      className={
-        "relative my-auto lg:w-[350px] xl:w-[450px] 2xl:w-[550px] 2k:w-[650px]"
-      }
+      className={"relative mx-auto my-auto w-[75%] lg:mx-[unset] lg:w-[25%]"}
     >
       <p
         className={
-          "lg:text-md absolute z-50 text-gray-500 lg:right-[-15%] lg:top-[10%] xl:right-[-10%] 2xl:right-[0%] 2k:text-2xl"
+          "absolute right-[-5%] top-[10%] z-50 text-xs text-gray-500 md:right-[10%] md:text-base lg:right-[-25%] lg:top-[10%] xl:right-[-10%] 2xl:right-[-5%] 2k:right-[15%]"
         }
       >
         Yep, I speak French
@@ -100,9 +103,10 @@ const List: FC = () => {
     },
   ];
   return (
+    // pb-top-md
     <div
       className={
-        "flex-0 flex w-[60%] flex-col py-top-md md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]"
+        "lg:flex-0 flex h-full flex-col justify-around py-top-md pl-left-sm text-sm md:pl-left-md md:text-base lg:w-[60%] lg:pl-left-lg lg:text-lg/[2em] xl:text-xl/[2em] 2xl:text-2xl/[2em] 2k:text-3xl/[2em]"
       }
     >
       {list.length > 0
@@ -110,7 +114,7 @@ const List: FC = () => {
             return (
               <p
                 key={`slide1_list_${listIndex}`}
-                className={`flex-1 ${indented ? "md:pl-left-md" : ""}`}
+                className={`${indented ? "md:pl-left-md" : ""}`}
               >
                 {bullet ? "—" : ""}&nbsp;<b>{title}</b>&nbsp;
                 {text}
@@ -126,7 +130,7 @@ const OldImages: FC = () => {
   return (
     <div
       className={
-        "relative flex flex-1 flex-col lg:bg-gray-500 xl:bg-yellow-500 2xl:bg-green-500 2k:bg-blue-500 4k:bg-red-500"
+        "flex flex-1 flex-col lg:bg-gray-500 xl:bg-yellow-500 2xl:bg-green-500 2k:bg-blue-500 4k:bg-red-500"
       }
     >
       <div className={"relative h-full"}>

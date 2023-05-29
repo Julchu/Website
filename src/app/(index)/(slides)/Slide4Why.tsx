@@ -52,7 +52,11 @@ const List: FC = () => {
   ];
 
   return (
-    <div className={"flex-0 flex w-[50%] flex-col py-top-md md:pl-left-md"}>
+    <div
+      className={
+        "lg:flex-0 flex h-full flex-col justify-around py-top-md pl-left-sm text-sm md:pl-left-md md:text-base lg:w-[50%] lg:pl-left-lg lg:text-lg/[2em] xl:text-xl/[2em] 2xl:text-2xl/[2em] 2k:text-3xl/[2em]"
+      }
+    >
       {list.length > 0
         ? list.map(({ text, indented, bullet, heading }, listIndex) => {
             if (heading)
@@ -60,7 +64,7 @@ const List: FC = () => {
                 <h1
                   key={`slide1_list_${listIndex}`}
                   className={
-                    "flex-1 pl-left-sm xl:text-3xl/[1.5em] 2xl:text-4xl/[1.5em] 2k:text-5xl/[1.5em]"
+                    "pl-left-sm xl:text-3xl/[4em] 2xl:text-4xl/[3em] 2k:text-5xl/[2em]"
                   }
                 >
                   <b>{text}</b>
@@ -70,10 +74,9 @@ const List: FC = () => {
               return (
                 <p
                   key={`slide1_list_${listIndex}`}
-                  className={`flex-1 md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]`}
+                  className={`md:pl-left-md xl:text-xl/[4em] 2xl:text-2xl/[3em] 2k:text-3xl/[2em]`}
                 >
-                  {bullet ? "—" : ""}&nbsp;
-                  {text}
+                  {bullet ? "—" : ""}&nbsp;{text}
                 </p>
               );
           })

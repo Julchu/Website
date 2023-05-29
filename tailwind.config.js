@@ -44,14 +44,14 @@ module.exports = {
       padding: {
         // Left
         "left-sm": "2rem",
-        "left-md": "8rem",
-        "left-lg": "",
+        "left-md": "4rem",
+        "left-lg": "6rem",
         "left-xl": "",
         "left-2xl": "",
         "left-2k": "",
 
         // Top
-        "top-sm": "",
+        "top-sm": "1rem",
         "top-md": "3rem",
         "top-lg": "",
         "top-xl": "",

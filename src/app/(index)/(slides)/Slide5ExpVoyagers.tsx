@@ -8,7 +8,7 @@ const Slide5: FC = () => {
     <section className={"flex h-screen snap-center flex-col 4k:h-2k"}>
       <Heading title={"What experience Julian brings"} />
 
-      <div className={"flex w-full flex-1 gap-x-16"}>
+      <div className={"my-auto flex w-full flex-1 gap-x-16"}>
         <List />
 
         <Images />
@@ -24,13 +24,6 @@ const Images: FC = () => {
         "relative m-auto lg:w-[350px] xl:w-[450px] 2xl:w-[550px] 2k:w-[650px]"
       }
     >
-      <p
-        className={
-          "lg:text-md absolute z-50 text-gray-500 lg:right-[-15%] lg:top-[10%] xl:right-[-10%] 2xl:right-[0%] 2k:text-2xl"
-        }
-      >
-        Yep, I speak French
-      </p>
       <Image
         className={"animate-fadeIn bg-black"}
         src={VoyagerImage}
@@ -42,7 +35,8 @@ const Images: FC = () => {
       <p
         className={"lg:text-md relative my-auto mt-5 text-gray-500 2k:text-2xl"}
       >
-        Exploring the abundant art in Chile, and climbing the Patagonia&apos;s
+        Always on the lookout for unique experiences and people to share them
+        with
       </p>
     </div>
   );
@@ -51,13 +45,14 @@ const Images: FC = () => {
 const List: FC = () => {
   const list: {
     title?: string;
+    subtitle?: string;
     text?: string;
     bullet?: boolean;
     indented?: boolean;
   }[] = [
     {
       title: "Voyagers",
-      text: "Toronto, Dec 2022 – Present",
+      subtitle: "Toronto, Dec 2022 – Present",
     },
     {
       text: "Built social travel platform that facilitates organizing trips and collaborating with travel mates to create personalized itineraries, and offer a search portal to connect like-minded individuals wanting to avoid travelling alone",
@@ -68,26 +63,42 @@ const List: FC = () => {
       bullet: true,
     },
     {
-      bullet: true,
       text: "Allows users to publicly share their experiences and reviews to provide valuable guidance and recommendations",
+      bullet: true,
     },
   ];
   return (
     <div
       className={
-        "flex-0 align-items flex w-[50%] flex-col content-around py-top-md md:pl-left-md xl:text-xl/[1.5em] 2xl:text-2xl/[1.5em] 2k:text-3xl/[1.5em]"
+        "flex-0 flex w-[50%] flex-col pb-top-md md:pl-left-md xl:text-xl/[4em] 2xl:text-2xl/[3em] 2k:text-3xl/[2em]"
       }
     >
       {list.length > 0
-        ? list.map(({ title, text, indented, bullet }, listIndex) => {
+        ? list.map(({ title, text, subtitle, indented, bullet }, listIndex) => {
             return (
-              <p
+              <div
                 key={`slide1_list_${listIndex}`}
-                className={`flex-1 ${indented ? "md:pl-left-md" : ""}`}
+                className={`${
+                  indented ? "md:pl-left-md" : ""
+                } flex flex-1 flex-col`}
               >
-                {bullet ? "—" : ""}&nbsp;<b>{title}</b>&nbsp;
-                {text}
-              </p>
+                {bullet ? "—" : null}&nbsp;
+                {title ? (
+                  <p>
+                    <b
+                      className={
+                        "xl:text-3xl/[4em] 2xl:text-4xl/[3em] 2k:text-5xl/[2em]"
+                      }
+                    >
+                      {title}
+                    </b>
+                    &nbsp;
+                    {subtitle ? subtitle : null}
+                  </p>
+                ) : text ? (
+                  text
+                ) : null}
+              </div>
             );
           })
         : null}

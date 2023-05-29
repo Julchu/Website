@@ -17,7 +17,7 @@ export default function Home() {
     // At 4k resolution, limit screen to 2k width
     <main
       className={
-        " h-screen snap-y snap-mandatory overflow-y-scroll 4k:mx-auto 4k:max-w-screen-2k 4k:overflow-visible"
+        "h-screen snap-y snap-mandatory overflow-y-scroll 4k:mx-auto 4k:max-w-screen-2k 4k:overflow-visible"
       }
     >
       <Slide1 />

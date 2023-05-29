@@ -5,7 +5,7 @@ import HomeImage from "/public/home.jpeg";
 
 const Slide1: FC = () => {
   return (
-    <section className={"relative h-screen snap-center 4k:h-2k"}>
+    <section className={"relative h-[100svh] snap-center 4k:h-2k"}>
       <div className={"absolute h-full w-full animate-fadeIn bg-black"}>
         <Image
           className={"object-cover object-bottom"}
