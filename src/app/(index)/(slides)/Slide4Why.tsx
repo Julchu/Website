@@ -5,10 +5,14 @@ import Image from "next/image";
 
 const Slide4: FC = () => {
   return (
-    <section className={"relative flex h-screen snap-center flex-col 4k:h-2k"}>
+    <section className={"flex h-screen snap-center flex-col 4k:h-2k"}>
       <Heading title={"Why you want to hire Julian"} />
 
-      <div className={"flex w-full flex-1 gap-x-16"}>
+      <div
+        className={
+          "my-auto flex w-full flex-1 flex-col lg:flex-row lg:gap-x-12 xl:gap-x-16"
+        }
+      >
         <List />
 
         <Images />
@@ -54,7 +58,7 @@ const List: FC = () => {
   return (
     <div
       className={
-        "lg:flex-0 flex h-full flex-col justify-around py-top-md pl-left-sm text-sm md:pl-left-md md:text-base lg:w-[50%] lg:pl-left-lg lg:text-lg/[2em] xl:text-xl/[2em] 2xl:text-2xl/[2em] 2k:text-3xl/[2em]"
+        "lg:flex-0 flex h-full flex-col justify-around px-left-sm pb-top-md text-sm md:py-top-md md:pl-left-md md:pr-0 md:text-base lg:w-[50%] lg:pl-left-lg lg:text-lg/[2em] xl:text-xl/[2em] 2xl:text-2xl/[2em] 2k:text-3xl/[2em]"
       }
     >
       {list.length > 0
@@ -64,7 +68,7 @@ const List: FC = () => {
                 <h1
                   key={`slide1_list_${listIndex}`}
                   className={
-                    "pl-left-sm xl:text-3xl/[4em] 2xl:text-4xl/[3em] 2k:text-5xl/[2em]"
+                    "xl:text-3xl/[4em] 2xl:text-4xl/[3em] 2k:text-5xl/[2em]"
                   }
                 >
                   <b>{text}</b>
@@ -87,7 +91,9 @@ const List: FC = () => {
 
 const Images: FC = () => {
   return (
-    <div className={"relative my-auto lg:w-[40vw]"}>
+    <div
+      className={"relative mx-auto my-auto w-[75%] lg:mx-[unset] lg:w-[40%]"}
+    >
       <Image
         className={"animate-fadeIn bg-black"}
         src={MlhImage}
@@ -98,7 +104,7 @@ const Images: FC = () => {
       />
       <p
         className={
-          "lg:text-md relative mx-auto w-fit text-gray-500 2k:text-2xl"
+          "lg:text-md relative m-auto mt-5 w-fit text-gray-500 2k:text-2xl"
         }
       >
         How everyone&apos;s faces would be if they had a Julian on their team

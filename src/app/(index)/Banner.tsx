@@ -7,7 +7,7 @@ const Banner: FC<{ title: string; subtitle: string }> = ({
   return (
     <div
       className={
-        "backdrop-brightness-5 relative top-[60%] z-10 flex h-[30%] flex-col place-content-center gap-y-3 bg-white/5 pl-left-sm leading-loose text-white backdrop-blur-sm md:pl-left-md lg:pl-left-lg"
+        "backdrop-brightness-5 relative top-[60%] z-10 flex h-[30%] flex-col place-content-center gap-y-3 bg-white/5 px-left-sm leading-loose text-white backdrop-blur-sm md:pl-left-md lg:pl-left-lg"
       }
     >
       <h1
