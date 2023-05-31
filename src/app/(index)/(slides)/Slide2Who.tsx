@@ -29,12 +29,9 @@ const Slide2: FC = () => {
   );
 };
 
-// Carousel
 const Images: FC = () => {
   return (
-    <div
-      className={"relative mx-auto my-auto w-[75%] lg:mx-[unset] lg:w-[25%]"}
-    >
+    <div className={"relative m-auto w-[75%] lg:mx-[unset] lg:w-[25%]"}>
       <p
         className={
           "absolute right-[-5%] top-[10%] z-50 text-xs text-gray-500 md:right-[10%] md:text-base lg:right-[-25%] lg:top-[10%] xl:right-[-10%] 2xl:right-[-5%] 2k:right-[15%]"
@@ -106,7 +103,7 @@ const List: FC = () => {
     // pb-top-md
     <div
       className={
-        "lg:flex-0 flex h-full flex-col justify-around py-top-md pl-left-sm text-sm md:pl-left-md md:text-base lg:w-[60%] lg:pl-left-lg lg:text-lg/[2em] xl:text-xl/[2em] 2xl:text-2xl/[2em] 2k:text-3xl/[2em]"
+        "lg:flex-0 flex h-full flex-col justify-around pl-left-sm text-sm md:pl-left-md md:text-base lg:w-[60%] lg:py-top-md lg:pl-left-lg lg:text-lg/[2em] xl:text-xl/[2em] 2xl:text-2xl/[2em] 2k:text-3xl/[2em]"
       }
     >
       {list.length > 0

@@ -23,7 +23,7 @@ const Slide5: FC = () => {
 
 const Images: FC = () => {
   return (
-    <div className={"relative my-auto w-[65%] lg:w-[25%]"}>
+    <div className={"relative m-auto w-[65%] lg:w-[25%]"}>
       <Image
         className={"animate-fadeIn bg-black"}
         src={VoyagerImage}
