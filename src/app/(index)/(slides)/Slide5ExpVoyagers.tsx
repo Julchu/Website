@@ -23,7 +23,7 @@ const Slide5: FC = () => {
 
 const Images: FC = () => {
   return (
-    <div className={"relative m-auto w-[65%] lg:w-[25%]"}>
+    <div className={"relative my-auto w-[65%] lg:w-[25%]"}>
       <Image
         className={"animate-fadeIn bg-black"}
         src={VoyagerImage}
@@ -70,7 +70,7 @@ const List: FC = () => {
   return (
     <div
       className={
-        "lg:flex-0 flex h-full flex-col justify-around px-left-sm pb-top-md text-sm md:pl-left-md  md:pr-0 md:text-base lg:w-[50%] lg:py-top-md lg:pl-left-lg lg:text-lg/[2em] xl:text-xl 2xl:text-2xl 2k:text-3xl"
+        "lg:flex-0 flex h-full flex-col justify-around px-left-sm pb-top-md text-sm md:pl-left-md  md:pr-0 md:text-base lg:w-[60%] lg:py-top-md lg:pl-left-lg lg:text-lg/[2em] xl:text-xl 2xl:text-2xl 2k:text-3xl"
       }
     >
       {list.length > 0
