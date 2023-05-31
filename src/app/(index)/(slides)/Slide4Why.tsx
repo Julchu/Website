@@ -58,7 +58,7 @@ const List: FC = () => {
   return (
     <div
       className={
-        "lg:flex-0 flex h-full flex-col justify-around px-left-sm pb-top-md text-sm md:py-top-md md:pl-left-md md:pr-0 md:text-base lg:w-[50%] lg:pl-left-lg lg:text-lg/[2em] xl:text-xl/[2em] 2xl:text-2xl/[2em] 2k:text-3xl/[2em]"
+        "lg:flex-0 flex h-full flex-col justify-around px-left-sm pb-top-md text-sm md:pl-left-md md:pr-0 md:text-base lg:w-[50%] lg:py-top-md lg:pl-left-lg lg:text-lg/[2em] xl:text-xl 2xl:text-2xl 2k:text-3xl"
       }
     >
       {list.length > 0
@@ -67,9 +67,7 @@ const List: FC = () => {
               return (
                 <h1
                   key={`slide1_list_${listIndex}`}
-                  className={
-                    "xl:text-3xl/[4em] 2xl:text-4xl/[3em] 2k:text-5xl/[2em]"
-                  }
+                  className={"xl:text-3xl 2xl:text-4xl 2k:text-5xl"}
                 >
                   <b>{text}</b>
                 </h1>
@@ -78,7 +76,7 @@ const List: FC = () => {
               return (
                 <p
                   key={`slide1_list_${listIndex}`}
-                  className={`md:pl-left-md xl:text-xl/[4em] 2xl:text-2xl/[3em] 2k:text-3xl/[2em]`}
+                  className={`md:pl-left-md xl:text-xl 2xl:text-2xl 2k:text-3xl`}
                 >
                   {bullet ? "—" : ""}&nbsp;{text}
                 </p>

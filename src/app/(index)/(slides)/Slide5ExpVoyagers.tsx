@@ -8,7 +8,11 @@ const Slide5: FC = () => {
     <section className={"flex h-screen snap-center flex-col 4k:h-2k"}>
       <Heading title={"What experience Julian brings"} />
 
-      <div className={"my-auto flex w-full flex-1 gap-x-16"}>
+      <div
+        className={
+          "my-auto flex w-full flex-1 flex-col lg:flex-row lg:gap-x-12 xl:gap-x-16"
+        }
+      >
         <List />
 
         <Images />
@@ -19,11 +23,7 @@ const Slide5: FC = () => {
 
 const Images: FC = () => {
   return (
-    <div
-      className={
-        "relative m-auto lg:w-[350px] xl:w-[450px] 2xl:w-[550px] 2k:w-[650px]"
-      }
-    >
+    <div className={"relative m-auto w-[65%] lg:w-[25%]"}>
       <Image
         className={"animate-fadeIn bg-black"}
         src={VoyagerImage}
@@ -70,7 +70,7 @@ const List: FC = () => {
   return (
     <div
       className={
-        "flex-0 flex w-[50%] flex-col pb-top-md md:pl-left-md xl:text-xl/[4em] 2xl:text-2xl/[3em] 2k:text-3xl/[2em]"
+        "lg:flex-0 flex h-full flex-col justify-around px-left-sm pb-top-md text-sm md:pl-left-md  md:pr-0 md:text-base lg:w-[50%] lg:py-top-md lg:pl-left-lg lg:text-lg/[2em] xl:text-xl 2xl:text-2xl 2k:text-3xl"
       }
     >
       {list.length > 0
@@ -85,11 +85,7 @@ const List: FC = () => {
                 {bullet ? "—" : null}&nbsp;
                 {title ? (
                   <p>
-                    <b
-                      className={
-                        "xl:text-3xl/[4em] 2xl:text-4xl/[3em] 2k:text-5xl/[2em]"
-                      }
-                    >
+                    <b className={"xl:text-3xl/[2em] 2xl:text-4xl 2k:text-5xl"}>
                       {title}
                     </b>
                     &nbsp;
