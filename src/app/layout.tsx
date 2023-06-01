@@ -1,9 +1,19 @@
 import "./globals.css";
-import { Amatic_SC, Inter, Montserrat, Poppins } from "next/font/google";
+import {
+  Amatic_SC,
+  Inter,
+  Montserrat,
+  Poppins,
+  Urbanist,
+} from "next/font/google";
 import { FC, ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/react";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
+const urbanist = Urbanist({
+  weight: ["400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -50,7 +60,7 @@ const Breakpoints: FC = () => {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className}`}>
+      <body className={`${urbanist.className}`}>
         {/*<Breakpoints />*/}
         {children}
         <Analytics />
