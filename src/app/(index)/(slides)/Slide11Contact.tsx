@@ -15,7 +15,7 @@ const Slide10: FC = () => {
           fill={true}
           placeholder={"blur"}
           quality={100}
-          // priority
+          priority
         />
       </div>
       <Banner

@@ -98,7 +98,7 @@ const Images: FC = () => {
         alt={"Hackathon"}
         placeholder={"blur"}
         quality={100}
-        // priority
+        priority
       />
       <p
         className={

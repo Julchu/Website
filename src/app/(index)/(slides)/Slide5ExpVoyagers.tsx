@@ -30,7 +30,7 @@ const Images: FC = () => {
         alt={"Via Ferrata"}
         placeholder={"blur"}
         quality={100}
-        // priority
+        priority
       />
       <p
         className={"lg:text-md relative my-auto mt-5 text-gray-500 2k:text-2xl"}

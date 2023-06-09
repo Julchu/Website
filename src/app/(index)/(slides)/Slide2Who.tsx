@@ -45,7 +45,7 @@ const Images: FC = () => {
         alt={"Poutine shirt"}
         placeholder={"blur"}
         quality={100}
-        // priority
+        priority
       />
       <p
         className={"lg:text-md relative my-auto mt-5 text-gray-500 2k:text-2xl"}
@@ -149,7 +149,7 @@ const OldImages: FC = () => {
               alt={"Poutine shirt"}
               placeholder={"blur"}
               quality={100}
-              // priority
+              priority
             />
           </div>
           <p className={"z-50 my-auto ml-5 h-fit text-2xl text-gray-500"}>
@@ -169,7 +169,7 @@ const OldImages: FC = () => {
             alt={"Piano"}
             placeholder={"blur"}
             quality={100}
-            // priority
+            priority
           />
         </div>
 
@@ -184,7 +184,7 @@ const OldImages: FC = () => {
             alt={"Torres Del Paine"}
             placeholder={"blur"}
             quality={100}
-            // priority
+            priority
           />
         </div>
         <p className={"absolute bottom-[140px] text-2xl text-gray-500"}>
