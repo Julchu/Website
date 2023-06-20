@@ -20,7 +20,7 @@ const Slide10: FC = () => {
       </div>
       <Banner
         title={"Pages in progress"}
-        subtitle={"Contact me at JChuMTL@gmail.com"}
+        subtitle={"Contact me at JulianChuTOR@gmail.com"}
       />
 
       {/*<Contact*/}
