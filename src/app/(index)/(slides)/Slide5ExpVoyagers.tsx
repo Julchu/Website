@@ -52,7 +52,7 @@ const List: FC = () => {
   }[] = [
     {
       title: "Voyagers",
-      subtitle: "Toronto, Dec 2022 – Present",
+      subtitle: "Toronto, Feb 2023 – Present",
     },
     {
       text: "Built social travel platform that facilitates organizing trips and collaborating with travel mates to create personalized itineraries, and offer a search portal to connect like-minded individuals wanting to avoid travelling alone",
