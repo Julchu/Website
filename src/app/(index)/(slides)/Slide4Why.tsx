@@ -6,7 +6,7 @@ import Image from "next/image";
 const Slide4: FC = () => {
   return (
     <section className={"flex h-screen snap-center flex-col 4k:h-2k"}>
-      <Heading title={"Why you want to hire Julian"} />
+      <Heading title={"Who am I to others?"} />
 
       <div
         className={
@@ -28,13 +28,13 @@ const List: FC = () => {
     bullet?: boolean;
     indented?: true;
   }[] = [
-    { text: "I am enthusiastic", heading: true },
+    { text: "Always enthusiastic", heading: true },
     {
       text: "I'm friendly, calm under stress, and I'm hard to offend",
       bullet: true,
     },
     { text: "I fully commit to projects I’m passionate about", bullet: true },
-    { text: "I love learning", heading: true },
+    { text: "Always learning", heading: true },
     {
       text: "I love picking up and incorporating new technologies",
       bullet: true,
@@ -44,7 +44,7 @@ const List: FC = () => {
       bullet: true,
     },
 
-    { text: "I enjoy collaborating", heading: true },
+    { text: "Always collaborating", heading: true },
     {
       text: "I’m not a scared (or scary) antisocial software developer",
       bullet: true,

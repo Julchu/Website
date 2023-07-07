@@ -18,10 +18,7 @@ const Slide1: FC = () => {
         />
       </div>
 
-      <Banner
-        title={"Why hire Julian?"}
-        subtitle={"Why you should hire Julian as a Full Stack Developer"}
-      />
+      <Banner title={"Hi, I'm Julian"} subtitle={"Welcome, bienvenue, 歡迎!"} />
     </section>
   );
 };

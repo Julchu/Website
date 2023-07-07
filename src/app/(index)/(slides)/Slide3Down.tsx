@@ -19,9 +19,7 @@ const Slide3: FC = () => {
       </div>
       <Banner
         title={"Down to the details"}
-        subtitle={
-          "How this could work for you and why Julian is the right fit\n"
-        }
+        subtitle={"3 years of experience bringing startups from 0 -> 1"}
       />
     </section>
   );

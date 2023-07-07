@@ -95,7 +95,7 @@ const List: FC = () => {
       bullet: true,
     },
     {
-      text: "Ex-accountant from Montreal who wanted to transition into a creative career, graduating in Computer Science at Wilfrid Laurier University",
+      text: "Ex-accountant from Montreal jumping into a career of creativity and autonomy, graduating in Computer Science at Wilfrid Laurier University",
       bullet: true,
     },
   ];
